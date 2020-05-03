@@ -1,6 +1,6 @@
 {
   "name": "@bongnv/md-time-to-read-loader",
-  "version": "0.0.0",
+  "version": "1.0.0-beta.1",
   "description": "A webpack loader to load timeToRead from parsed markdown files",
   "main": "index.js",
   "scripts": {
