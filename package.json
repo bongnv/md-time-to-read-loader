@@ -1,0 +1,35 @@
+{
+  "name": "@bongnv/md-time-to-read-loader",
+  "version": "1.0.0-beta.1",
+  "description": "A webpack loader to load timeToRead from parsed markdown files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bongnv/md-time-to-read-loader.git"
+  },
+  "keywords": [
+    "markdown",
+    "webpack"
+  ],
+  "author": "Bong Nguyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bongnv/md-time-to-read-loader/issues"
+  },
+  "homepage": "https://github.com/bongnv/md-time-to-read-loader#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "semantic-release": "^17.0.7"
+  },
+  "dependencies": {
+    "loader-utils": "^2.0.0",
+    "lodash": "^4.17.15",
+    "sanitize-html": "^1.23.0"
+  }
+}
