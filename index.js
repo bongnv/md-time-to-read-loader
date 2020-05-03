@@ -1,5 +1,4 @@
 const { getOptions } = require("loader-utils");
-const sanitizeHTML = require("sanitize-html");
 const { words } = require("lodash");
 
 module.exports = function (source, map, meta) {
@@ -8,12 +7,7 @@ module.exports = function (source, map, meta) {
 
   const callback = this.async();
 
-  const text =
-    meta.text ||
-    sanitizeHTML(meta.html, {
-      allowedAttributes: {},
-      allowedTags: [],
-    });
+  const text = meta.text;
 
   const count = words(text).length;
   const timeToRead = Math.round(count / speed) || 1;
